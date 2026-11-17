@@ -1,0 +1,11 @@
+langchain
+langgraph
+langchain-groq
+langsmith
+sentence-transformers
+scikit-learn
+pydantic
+python-dotenv
+pillow
+numpy
+torch
