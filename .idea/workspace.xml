@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fe1c242-8439-4271-89e0-79961427d4a0" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000631875563868" />
+      <entry key="MS500" value="1.1445860229881608" />
+      <entry key="S2" value="1.6166398368165371" />
+      <entry key="S5" value="1.824313444059166" />
+      <entry key="S10" value="1.9400857674439926" />
+      <entry key="S30" value="3.2305265926061386" />
+      <entry key="S60" value="5.31785404957807" />
+      <entry key="M2" value="7.741680155140506" />
+      <entry key="M5" value="10.391705448334273" />
+      <entry key="M10" value="12.142548240439515" />
+      <entry key="M15" value="13.34561221830113" />
+      <entry key="M30" value="15.539148961666017" />
+      <entry key="H1" value="17.356507973024865" />
+      <entry key="H2" value="18.55731297191931" />
+      <entry key="H4" value="19.626235632923468" />
+      <entry key="D1" value="46.41966182903821" />
+      <entry key="W1" value="177.53880919114206" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="4.846946502859156E-210" />
+      <entry key="S60" value="3.111484289119354E-105" />
+      <entry key="M2" value="7.887299815438542E-53" />
+      <entry key="M5" value="2.1848851154993324E-21" />
+      <entry key="M10" value="6.663116385253079E-11" />
+      <entry key="M15" value="2.1253461719963884E-7" />
+      <entry key="M30" value="7.228379098623038E-4" />
+      <entry key="H1" value="0.0448287411502554" />
+      <entry key="H2" value="0.36289263042542136" />
+      <entry key="H4" value="1.0665490999081597" />
+      <entry key="D1" value="3.9590107405457546" />
+      <entry key="W1" value="6.344399282400017" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8950793215798992" />
+      <entry key="MS500" value="1.11830640851365" />
+      <entry key="S2" value="1.606426240335288" />
+      <entry key="S5" value="1.8195873742615565" />
+      <entry key="S10" value="1.9375178974318197" />
+      <entry key="S30" value="3.228532455554327" />
+      <entry key="S60" value="5.315257888982093" />
+      <entry key="M2" value="7.738695783468131" />
+      <entry key="M5" value="10.38946827730321" />
+      <entry key="M10" value="12.141125334371079" />
+      <entry key="M15" value="13.344568802250842" />
+      <entry key="M30" value="15.539283270007909" />
+      <entry key="H1" value="17.400978550911468" />
+      <entry key="H2" value="18.91987121247852" />
+      <entry key="H4" value="20.692444732557913" />
+      <entry key="D1" value="50.37843083262979" />
+      <entry key="W1" value="183.88313838738597" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3LNWrm7pnYdeFjwPzApbDZhHCUy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/gargk/AgenticAIProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "terminal",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gargk\AgenticAIProject" />
+      <recent name="C:\Users\gargk\AgenticAIProject\src\agenticaiproject" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AgenticAIProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/5_MultiModal_Agent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5_MultiModal_Agent/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fe1c242-8439-4271-89e0-79961427d4a0" name="Changes" comment="" />
+      <created>1793295207716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793295207716</updated>
+      <workItem from="1793295208717" duration="9842000" />
+      <workItem from="1793388435887" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
