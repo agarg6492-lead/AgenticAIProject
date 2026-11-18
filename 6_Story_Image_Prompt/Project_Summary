@@ -1,6 +1,12 @@
 Story Image Agent is a multimodal AI workflow that converts storybook images into structured story knowledge and high-quality image-generation prompts.
 
-The system uses Groq's Qwen Vision model for image understanding, LangGraph for agent orchestration, and LangSmith for evaluation. Generated prompts are automatically validated using semantic similarity, hallucination detection, story coverage checks, token tracking, and latency analysis before being approved and stored.
+The system uses Groq's Qwen Vision model for image understanding, LangGraph for agent orchestration, and LangSmith for evaluation. 
+Generated prompts are automatically validated using:
+semantic similarity, 
+hallucination detection, 
+story coverage checks, 
+token tracking, and 
+latency analysis before being approved and stored.
 
 Key Features:
 
@@ -11,3 +17,7 @@ Key Features:
 • Hallucination detection
 • LangSmith observability and evaluation
 • LangGraph workflow orchestration
+
+Upcoming Updates:
+- Add Guardrails
+- Add Streamlit UI
