@@ -12,7 +12,7 @@ from models import (
     StoryState
 )
 
-from PIL import Image
+#from PIL import Image
 import base64
 
 

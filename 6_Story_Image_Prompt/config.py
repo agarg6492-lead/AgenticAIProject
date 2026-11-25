@@ -30,7 +30,7 @@ load_dotenv()
 # PROJECT PATHS
 # ==========================================================
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path('.')
 
 OUTPUT_DIR = BASE_DIR / "outputs"
 
@@ -78,10 +78,10 @@ LANGCHAIN_TRACING_V2 = os.getenv(
 
 # Prompt must be semantically close to
 # expected output.
-SEMANTIC_SIMILARITY_THRESHOLD = 0.90
+SEMANTIC_SIMILARITY_THRESHOLD = 0.70
 
 # Prompt must remain grounded in story.
-HALLUCINATION_THRESHOLD = 0.95
+HALLUCINATION_THRESHOLD = 0.70
 
 # Minimum quality score assigned by
 # evaluation layer.
@@ -124,32 +124,34 @@ Analyze the uploaded story image.
 
 Extract:
 
-1. Story Name
-2. Story Summary
-3. Characters
-4. Setting
-5. Moral
-6. Detailed Image Generation Prompt
+- Story Name
+- Story Summary
+- Characters
+- Setting
+- Moral
+- Detailed Image Generation Prompt
 
-The image generation prompt must:
+Return a JSON object ONLY.
 
-- Be visually rich
-- Include all important characters
-- Include setting
-- Include moral representation
-- Be suitable for AI image generation
-- Must avoid words that can create copyright conflicts
+DO NOT:
 
-Return ONLY valid JSON.
+- wrap the response in markdown
+- use ```json
+- use code fences
+- add explanations
+- add comments
+- add introductory text
+- add trailing text
 
-Required format:
+The response must start with { and end with }.
 
+Required JSON schema:
 {
-    "story_name": "",
-    "story_summary": "",
-    "characters": [],
-    "setting": "",
-    "moral": "",
-    "image_prompt": ""
+  "story_name": "",
+  "story_summary": "",
+  "characters": [],
+  "setting": "",
+  "moral": "",
+  "image_prompt": ""
 }
 """

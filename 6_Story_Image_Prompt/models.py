@@ -53,6 +53,7 @@ class StoryState(TypedDict, total=False):
     characters: list[str]
     setting: str
     moral: str
+    token_usage: dict
 
     # Final generated prompt
     image_prompt: str

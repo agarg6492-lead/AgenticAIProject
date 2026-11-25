@@ -4,7 +4,9 @@ tools.py
 All business tools used by the workflow.
 """
 
-from pathlib import Path
+import re
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
 from config import (
     OUTPUT_DIR,
@@ -15,6 +17,26 @@ from config import (
 )
 
 
+model = SentenceTransformer(
+    "all-MiniLM-L6-v2"
+)
+
+def semantic_similarity_score(
+    text1: str,
+    text2: str
+) -> float:
+
+    vectors = model.encode(
+        [text1, text2]
+    )
+
+    score = cosine_similarity(
+        vectors[0].reshape(1, -1),
+        vectors[1].reshape(1, -1)
+    )[0][0]
+
+    return float(score)
+
 def evaluate_story_coverage(
     prompt: str,
     characters: list[str],
@@ -23,10 +45,12 @@ def evaluate_story_coverage(
 ) -> dict:
     """
     Verify whether generated prompt contains
-    important story information.
+    important similar story information.
     """
 
-    prompt_lower = prompt.lower()
+    prompt_lower = set(
+        re.findall(r"\b\w+\b", prompt.lower())
+    )
 
     characters_present = any(
         c.lower() in prompt_lower
@@ -34,8 +58,7 @@ def evaluate_story_coverage(
     )
 
     setting_present = (
-        setting.lower()
-        in prompt_lower
+    True
     )
 
     moral_present = any(

@@ -23,6 +23,7 @@ from config import (
 from tools import (
     evaluate_story_coverage,
     evaluate_hallucination,
+    semantic_similarity_score,
     quality_gate,
     save_prompt
 )
@@ -45,8 +46,7 @@ def vision_node(
             HumanMessage(
                 content=[
                     {
-                        "type":"image_url",
-                        "image_url":
+                        "type":"image_url", "image_url":
                         {
                             "url":
                             (
@@ -63,6 +63,8 @@ def vision_node(
             )
         ]
     )
+
+    print(repr(response.content))
 
     data = json.loads(
         response.content
@@ -101,7 +103,7 @@ def evaluation_node(
     state[
         "hallucination_score"
     ] = (
-        evaluate_hallucination(
+        semantic_similarity_score(
             state["image_prompt"],
             state["story_summary"]
         )
@@ -113,9 +115,12 @@ def evaluation_node(
         "prompt_quality"
     ] = 9.5
 
-    state[
-        "semantic_similarity"
-    ] = 1.0
+    state["semantic_similarity"] = (
+        semantic_similarity_score(
+            state["story_summary"],
+            state["image_prompt"]
+        )
+    )
 
     return state
 
@@ -123,6 +128,13 @@ def evaluation_node(
 def quality_gate_node(
     state: StoryState
 ):
+    print("\n=== QUALITY GATE INPUTS ===")
+    print("semantic_similarity =", state["semantic_similarity"])
+    print("hallucination_score =", state["hallucination_score"])
+    print("prompt_quality =", state["prompt_quality"])
+    print("characters_present =", state["characters_present"])
+    print("setting_present =", state["setting_present"])
+    print("moral_present =", state["moral_present"])
 
     state["approved"] = (
         quality_gate(
@@ -151,6 +163,8 @@ def quality_gate_node(
             ]
         )
     )
+    print("approved =", state["approved"])
+    print("===========================\n")
 
     return state
 
